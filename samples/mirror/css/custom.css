@@ -1,0 +1,361 @@
+@charset "utf-8";
+/* CSS Document - Custom styles that overwrite the template CSS code*/
+
+.columnImage {
+	width:100%;
+	p-t-sm;
+}
+
+.red_text {
+	color:#C90000;
+}
+
+.new_highlight {
+	color: #FF0000;	
+	font-size: 0.8em;
+}
+
+/* begin responsive video */
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* end responsive video */
+
+
+/* begin jQuery expand/collapse behavior */
+.question, .question_nested, .collapseAll, .expandAll  {
+	cursor: pointer;
+}
+
+.question, .question_nested {
+	color:#333;
+	font-size:1.6em;
+	line-height:1.5em;
+}
+
+.question a, .question a:hover, .question a:visited {
+	color:#333;
+}
+
+.question_nested a, .question_nested a:hover, .question_nested a:visited {
+	color:#333;
+}
+
+.answer, .answer_nested {
+	padding-left:2.5%;
+}
+/* end jQuery expand/collapse behavior */
+
+
+/* begin custom table colors to fix accessibility contrast issue with links */
+.table.table-default > tbody > tr > td {
+  background: #f9f9f9;
+}
+
+.table.table-striped.alt-table-header > thead > tr > th,
+.table.table-striped.alt-table-header > thead > tr > td {
+  background: #d9d9d9;
+  border: 2px solid #fff;
+}
+/* end custom table colors to fix accessibility contrast issue with links */
+
+.red-alert {
+	border-color:#C90000;
+}
+
+.red-alert .panel-heading {
+	border-color:#C90000;
+	background-color:#C90000;
+	color: #fff;
+}
+
+
+.red-alert .panel-heading h4 span[class^="ca-gov-icon-"] {
+	color: #fff;
+}
+
+
+.yellow-alert {
+	border-color:#FBAD23;
+}
+
+.yellow-alert .panel-heading {
+	border-color:#FBAD23;
+	background-color:#FBAD23;
+	/* color: #fff; */
+}
+
+/*
+.yellow-alert .panel-heading h4 span[class^="ca-gov-icon-"] {
+	color: #fff;
+}
+*/
+
+.green-alert {
+	border-color:#178300;
+}
+
+.green-alert .panel-heading {
+	border-color:#178300;
+	background-color:#178300;
+	color: #fff;
+}
+
+
+.green-alert .panel-heading h4 span[class^="ca-gov-icon-"] {
+	color: #fff;
+}
+
+.branding .header-organization-banner img {
+  width:171px;
+}
+
+@media (min-width: 768px) {
+  .fixed.compact .header-organization-banner img {
+    width:150px;
+  }
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+.table_column_10 {
+	width:10%;
+}
+
+.table_column_15 {
+	width:15%;
+}
+
+.table_column_30 {
+	width:30%;
+}
+
+.table_column_sm {
+	width:20%;
+}
+
+.table_column_med {
+	width:40%;
+}
+
+.table_column_lg {
+	width:60%;
+}
+
+.table_column_qtr {
+	width:25%;
+}
+
+.table_column_half {
+	width:50%;
+}
+
+.table_column_3qtr {
+	width:75%;
+}
+
+.center-div-80 {
+	margin:auto;
+	width:80%;
+}
+
+.center-div-50 {
+	margin:auto;
+	width:50%;
+}
+
+/* -----------------------------------------
+ SERVICE TILE - No Panel Drop Down
+----------------------------------------- */
+.service-tile-no-panel {
+  float: left;
+  width: 100%;
+  /* Need to keep the two column longer than bootstrap has .make-*-column for */
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  min-height: 240px;
+  color: #E1F2F7;
+  background: #046B99;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 450px) {
+  .service-tile-no-panel {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .service-tile-no-panel {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .service-tile-no-panel {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .service-tile-no-panel {
+    min-height: 280px;
+  }
+}
+@media (min-width: 992px) {
+  .service-tile-no-panel {
+    min-height: 240px;
+  }
+}
+@media (min-width: 1280px) {
+  .service-tile-no-panel {
+    min-height: 320px;
+  }
+}
+.service-tile-no-panel .icon-fallback {
+  min-width: 100%;
+  line-height: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.service-tile-no-panel .teaser {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 30%, #000000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 30%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#000000', GradientType=0);
+  color: #fff;
+  padding: 10px 0;
+}
+.service-tile-no-panel .teaser .title {
+  margin: 5px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.service-tile-no-panel .teaser .title:hover {
+  color: #FDB81E;
+}
+.service-tile-no-panel:focus .teaser .title {
+  color: #FDB81E;
+}
+
+
+/*---------------------------------------------*/
+/*  benefitCalculator                          */
+/*---------------------------------------------*/
+
+.calculatorInput input {
+ font-family:Arial, Helvetica, sans-serif;
+}
+
+.calculatorResult input {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 0;
+	background: none;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.calculatorMessage input {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 0;
+	background: none;
+	font-weight: bolder;
+	color: #F00;
+}
+
+.CalcTextResult {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+}
+.CalcTextEnter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.calcLeftColumn {
+	margin: 0px;
+	float: left;
+	width: 65%;
+}
+
+.calcRightColumn {
+	margin: 0px;
+	float: right;
+	width: 30%;
+}
+
+/*---------------------------------------------*/
+/*  end benefitCalculator                      */
+/*---------------------------------------------*/
+
+.home-icon {
+	color:#333;
+}
+
+li p {
+	padding-top: 8px;
+}
+
+ul li ul {
+	padding-bottom:8px;
+}
+
+ul li ol {
+	padding-bottom:8px;
+}
+
+ol li ol {
+	padding-bottom:8px;
+}
+
+ol li ul {
+	padding-bottom:8px;
+}
+
+.opener {
+	cursor:pointer;
+}
+
+@media (min-width: 768px) {
+	.fixed.compact .header-organization-banner img {
+		padding-top:4px;
+		padding-bottom:2px;
+  }
+}

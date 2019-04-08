@@ -27,3 +27,5 @@
         mv jobs_and_training/ site/
         cp site/Layoff_Services_WARN.htm site/index.html
         ```
+
+- Create a manifest of the live site (site-inventory.csv)

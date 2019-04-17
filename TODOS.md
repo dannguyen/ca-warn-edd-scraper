@@ -29,3 +29,6 @@
         ```
 
 - Create a manifest of the live site (site-inventory.csv)
+- Work on HTML scraper
+- Work on PDF scraper
+- Devise format-version description (e.g. '2014-style')
